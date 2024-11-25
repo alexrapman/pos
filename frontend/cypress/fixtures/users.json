@@ -1,0 +1,18 @@
+// frontend/cypress/fixtures/users.json
+{
+    "admin": {
+      "email": "admin@test.com",
+      "password": "password123",
+      "role": "admin"
+    },
+    "waiter": {
+      "email": "waiter@test.com",
+      "password": "password123",
+      "role": "waiter"
+    },
+    "kitchen": {
+      "email": "kitchen@test.com",
+      "password": "password123",
+      "role": "kitchen"
+    }
+  }

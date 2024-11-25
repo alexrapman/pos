@@ -1,0 +1,9 @@
+{
+    "name": "restaurant-pos",
+    "version": "1.0.0",
+    "scripts": {
+        "migrate": "node scripts/migrate.js",
+        "build": "tsc -b packages/*",
+        "test": "jest"
+    }
+}

@@ -1,0 +1,103 @@
+// backend/src/templates/receipt-email.hbs
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recibo de su pedido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .details {
+            margin-bottom: 20px;
+        }
+
+        .items {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .items th,
+        .items td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .total {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Restaurante TPV</h1>
+            <p>Gracias por su visita</p>
+        </div>
+
+        <div class="details">
+            <p><strong>Pedido #:</strong> {{orderNumber}}</p>
+            <p><strong>Fecha:</strong> {{date}}</p>
+            <p><strong>Mesa:</strong> {{tableNumber}}</p>
+        </div>
+
+        <table class="items">
+            <thead>
+                <tr>
+                    <th>Cantidad</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each items}}
+                <tr>
+                    <td>{{quantity}}</td>
+                    <td>{{name}}</td>
+                    <td>{{price}}€</td>
+                    <td>{{multiply quantity price}}€</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <div class="total">
+            <p>Subtotal: {{subtotal}}€</p>
+            <p>IVA (21%): {{tax}}€</p>
+            <p>Total: {{total}}€</p>
+        </div>
+
+        <div class="footer">
+            <p>Si tiene alguna pregunta, no dude en contactarnos</p>
+            <p>Email: info@restaurante.com | Tel: 123-456-789</p>
+        </div>
+    </div>
+</body>
+
+</html>

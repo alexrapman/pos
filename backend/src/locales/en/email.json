@@ -1,0 +1,10 @@
+{
+    "refund": {
+        "subject": "Refund Processed",
+        "greeting": "Dear {{customerName}}",
+        "message": "Your refund for order #{{orderId}} has been processed.",
+        "amount": "Amount",
+        "refundId": "Refund ID",
+        "date": "Date"
+    }
+}

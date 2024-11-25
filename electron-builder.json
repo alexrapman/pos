@@ -1,0 +1,21 @@
+// electron-builder.json
+{
+    "appId": "com.restaurant.pos",
+    "productName": "Restaurant POS",
+    "directories": {
+        "output": "dist"
+    },
+    "win": {
+        "target": [
+            "nsis"
+        ],
+        "icon": "build/icon.ico"
+    },
+    "nsis": {
+        "oneClick": false,
+        "allowToChangeInstallationDirectory": true,
+        "createDesktopShortcut": true,
+        "createStartMenuShortcut": true,
+        "shortcutName": "Restaurant POS"
+    }
+}

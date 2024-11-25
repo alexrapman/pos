@@ -1,0 +1,6 @@
+{
+    "git.ignoreLimitWarning": true,
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "files.autoSave": "onWindowChange",
+    "github.copilot.chat.localeOverride": "es"
+}

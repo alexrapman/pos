@@ -1,0 +1,19 @@
+// frontend/cypress/fixtures/products.json
+{
+    "menuItems": [
+      {
+        "id": 1,
+        "name": "Pizza Margherita",
+        "price": 10.99,
+        "category": "Pizza",
+        "allergens": ["gluten", "dairy"]
+      },
+      {
+        "id": 2,
+        "name": "Coca Cola",
+        "price": 2.50,
+        "category": "Drinks"
+      }
+    ]
+  }
+  
